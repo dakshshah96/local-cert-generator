@@ -16,15 +16,15 @@ cd local-cert-generator
 sh createRootCA.sh
 ```
 
-3. Trust this certificate after importing it to your System keychain:
+3. Add the root certificate we just generated to your list of trusted certificates. This step depends on the operating system you're running:
 
-    - For Mac: use Keychain Access
+    - **macOS**: Open Keychain Access and import the root certificate to your System keychain. Then mark the certificate as trusted.
 
     ![Trust root certificate](https://cdn-images-1.medium.com/max/1600/1*NWwMb0yV9ClHDj87Kug9Ng.png)
 
-    - For Linux: use `trust`, `update-ca-certificates` or any command used by your distribution
+    - **Linux**: Depending on your Linux distribution, you can use `trust`, `update-ca-certificates` or another command to mark the generated root certificate as trusted.
 
-    Note: you may need to restart your browser to make it correctly load the trusted rootCA
+*Note*: You may need to restart your browser to load the newly trusted root certificate correctly.
 
 4. Run the script to create a domain certificate for `localhost`: 
 
