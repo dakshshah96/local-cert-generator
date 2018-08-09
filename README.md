@@ -7,7 +7,7 @@ A set of scripts to quickly generate a HTTPS certificate for your local developm
 1. Clone this repository and `cd` into it:
 
 ```
-git clone https://github.com/dakshshah96/local-cert-generator.git
+run git clone
 cd local-cert-generator
 ```
 2. Run the script to create a root certificate:
