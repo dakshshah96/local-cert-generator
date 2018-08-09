@@ -23,7 +23,7 @@ sh createRootCA.sh
     ![Trust root certificate](https://cdn-images-1.medium.com/max/1600/1*NWwMb0yV9ClHDj87Kug9Ng.png)
 
     - **Linux**: Depending on your Linux distribution, you can use `trust`, `update-ca-certificates` or another command to mark the generated root certificate as trusted.
-    - **Windows** press  windows key + R and run certmgr.msc and selecet trusted root certificate--> certificates--right click-->all   task-->import-->follow the instruction
+    - **Windows**: Windows key + R and run certmgr.msc and selecet trusted root certificate--> certificates--right click-->all   task-->import-->follow the instruction
 
 *Note*: You may need to restart your browser to load the newly trusted root certificate correctly.
 
