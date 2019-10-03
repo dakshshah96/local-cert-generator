@@ -11,4 +11,4 @@ L=RandomCity
 O=RandomOrganization
 OU=RandomOrganizationUnit
 emailAddress=hello@example.com
-CN = localhost
+CN=localhost

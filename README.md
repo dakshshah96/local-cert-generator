@@ -26,7 +26,7 @@ sh createRootCA.sh
 
 *Note*: You may need to restart your browser to load the newly trusted root certificate correctly.
 
-4. Run the script to create a domain certificate for `localhost`: 
+4. Run the script to create a domain certificate for `localhost`:
 
 ```
 sh createSelfSigned.sh
@@ -48,4 +48,16 @@ var certOptions = {
 var app = express()
 
 var server = https.createServer(certOptions, app).listen(443)
+```
+
+6. Demo server available in the "example" directory
+
+```
+cd example
+node server.js
+```
+
+Open in browser by addressing `localhost:443` or
+```
+https://localhost
 ```
