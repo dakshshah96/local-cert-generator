@@ -1,0 +1,27 @@
+{
+  "name": "local-cert-generator",
+  "version": "1.0.0",
+  "description": "self signed ssl certs generator\u001e",
+  "main": "server.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sufius/local-cert-generator.git"
+  },
+  "author": "Sufian Abu-Rab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sufius/local-cert-generator/issues"
+  },
+  "homepage": "https://github.com/sufius/local-cert-generator#readme"
+}
