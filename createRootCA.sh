@@ -8,10 +8,10 @@
 
 if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under GNU/Linux platform
-    openssl genrsa -out example/rootCA.key 2048
-    openssl req -x509 -new -nodes -key example/rootCA.key -sha256 -days 1024 -out example/rootCA.pem -subj "/C=DE/ST=Random/L=Random/O=Random/OU=Random/CN=Local Certificate";
+    openssl genrsa -out certs/rootCA.key 2048
+    openssl req -x509 -new -nodes -key certs/rootCA.key -sha256 -days 1024 -out certs/rootCA.pem -subj "/C=DE/ST=Random/L=Random/O=Random/OU=Random/CN=Local Certificate";
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ] || [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
     # Do something under 32 bits Windows NT platform
-    winpty openssl genrsa -out example/rootCA.key 2048
-    winpty openssl req -x509 -new -nodes -key example/rootCA.key -sha256 -days 1024 -out example/rootCA.pem -subj "//C=DE\ST=Random\L=Random\O=Random\OU=Random\CN=Local Certificate";
+    winpty openssl genrsa -out certs/rootCA.key 2048
+    winpty openssl req -x509 -new -nodes -key certs/rootCA.key -sha256 -days 1024 -out certs/rootCA.pem -subj "//C=DE\ST=Random\L=Random\O=Random\OU=Random\CN=Local Certificate";
 fi
