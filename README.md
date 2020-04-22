@@ -7,7 +7,7 @@ A set of scripts to quickly generate a HTTPS certificate for your local developm
 1. Clone this repository and `cd` into it:
 
 ```
-git clone https://github.com/dakshshah96/local-cert-generator.git
+run git clone
 cd local-cert-generator
 ```
 2. Run the script to create a root certificate:
@@ -23,6 +23,7 @@ sh createRootCA.sh
     ![Trust root certificate](https://cdn-images-1.medium.com/max/1600/1*NWwMb0yV9ClHDj87Kug9Ng.png)
 
     - **Linux**: Depending on your Linux distribution, you can use `trust`, `update-ca-certificates` or another command to mark the generated root certificate as trusted.
+    - **Windows**: Windows key + R and run certmgr.msc and selecet `Trusted Root Certificatation Authorities--> certificates-->right click-->All Task-->import-->an then follow the instructions
 
 *Note*: You may need to restart your browser to load the newly trusted root certificate correctly.
 
